@@ -10,7 +10,7 @@ from dash import dcc
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 import pandas as pd
-
+import flask
 
 # In[3]:
 
@@ -171,7 +171,8 @@ list_locations = covid_data_dict.set_index('Name')[['Latitude', 'Longitude']].T.
 
 
 # web app
-app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}])
+server = flask.Flask(__name__)
+app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}],server=server)
 
 app.layout = html.Div([
     html.Div([
