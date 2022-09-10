@@ -7,3 +7,4 @@ prettytable==3.3.0
 requests==2.26.0
 gunicorn
 lxml
+flask==1.1.2
