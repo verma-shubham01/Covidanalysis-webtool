@@ -447,22 +447,22 @@ def update_confirmed(w_countries):
             'data': [go.Indicator(
                     mode='number',
                     value=value_vacpeople,
-                    
+                    align = "center",
                     number={'valueformat': ',',
                             'font': {'size': 25},
 
                                },
-                    domain={'y': [0,1], 'x': [0,.4]}),
+                    domain={'y': [0,1], 'x': [0,.8]}),
                     
                      go.Indicator(
                     mode='number',
                     value=percent_vacpeople,
-                    
+                    align = "left",
                     number={'valueformat': '.','prefix': "        (",'suffix':"%)",
                             'font': {'size': 15,'color':'#b300b3'},
 
                                },
-                    domain={'y': [0, 1], 'x': [0.9999,1]})],
+                    domain={'y': [0, 1], 'x': [0.8,1]})],
     'layout': go.Layout(
                 title={
                        'y': 1,
