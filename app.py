@@ -458,7 +458,7 @@ def update_confirmed(w_countries):
                     mode='number',
                     value=percent_vacpeople,
                     align = "left",
-                    number={'valueformat': '.','prefix': "        (",'suffix':"%)",
+                    number={'valueformat': '.','prefix': "(",'suffix':"%)",
                             'font': {'size': 15,'color':'#b300b3'},
 
                                },
