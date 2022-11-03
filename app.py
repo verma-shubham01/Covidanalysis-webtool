@@ -890,7 +890,7 @@ def update_graph(w_countries):
 
 if __name__ == '__main__':
     
-    app.run(debug=False)
+    app.run()
 
 
 # In[ ]:
